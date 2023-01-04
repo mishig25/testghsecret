@@ -4,6 +4,6 @@ jobs:
   Job1:
     uses: huggingface/test_gh_secret/.github/workflows/github-actions-demo.yml@main
     with:
-      environment: TestEnvironment
+      environment: prod
     secrets:
       TEST_SECRET: inherit
