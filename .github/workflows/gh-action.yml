@@ -1,0 +1,9 @@
+name: Build documentation
+
+on: [push]
+
+jobs:
+   build:
+    uses: huggingface/test_gh_secret/blob/main/.github/workflows/github-actions-demo.yml@main
+    secrets:
+      MY_SECRET: ${{ secrets.MY_SECRET }}
