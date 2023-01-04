@@ -4,4 +4,4 @@ jobs:
   Job1:
     uses: huggingface/test_gh_secret/.github/workflows/github-actions-demo.yml@main
     secrets:
-      TEST_SECRET: ${{ secrets.TEST_SECRET }}
+      TEST_SECRET: ${{ secrets.TestEnvironment_TEST_SECRET }}
