@@ -3,5 +3,7 @@ on: push
 jobs:
   Job1:
     uses: huggingface/test_gh_secret/.github/workflows/github-actions-demo.yml@main
+    with:
+      environment: TestEnvironment
     secrets:
-      TEST_SECRET: ${{ secrets.TestEnvironment_TEST_SECRET }}
+      TEST_SECRET: ${{ secrets.TEST_SECRET }}
