@@ -1,9 +1,7 @@
-name: Build documentation
-
-on: [push]
-
+name: Test Parent
+on: push
 jobs:
-   build:
+  Job1:
     uses: huggingface/test_gh_secret/.github/workflows/github-actions-demo.yml@main
     secrets:
-      MY_SECRET: ${{ secrets.MY_SECRET }}
+      TEST_SECRET: ${{ secrets.TEST_SECRET }}
